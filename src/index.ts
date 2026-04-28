@@ -10,6 +10,7 @@ import { connectRedis, disconnectRedis } from './shared/redis/connection.js';
 import authPlugin from './plugins/auth.plugin.js';
 import authRoutes from './auth/auth.route.js';
 import userRoutes from './user/user.route.js';
+import brandRoutes from './brand/brand.route.js';
 
 declare module 'fastify' {
   interface FastifyInstance {
@@ -51,6 +52,7 @@ async function bootstrap() {
   await app.register(authPlugin);
   await app.register(authRoutes);
   await app.register(userRoutes);
+  await app.register(brandRoutes);
 
   app.get('/health', async () => ({ status: 'ok' }));
 

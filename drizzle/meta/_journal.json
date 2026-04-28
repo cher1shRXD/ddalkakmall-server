@@ -8,6 +8,13 @@
       "when": 1777255391474,
       "tag": "0000_cute_maria_hill",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1777270228554,
+      "tag": "0001_solid_silvermane",
+      "breakpoints": true
     }
   ]
 }

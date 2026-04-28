@@ -2,9 +2,10 @@ import { drizzle } from 'drizzle-orm/mysql2';
 import mysql from 'mysql2/promise';
 import { env } from '../../env.js';
 import { users } from './schema/users.js';
-import { refreshTokens } from './schema/refresh-tokens.js';
+import { brandSubscriptions } from './schema/brand-subscriptions.js';
+import { brands } from './schema/brands.js';
 
-const schema = { users, refreshTokens };
+const schema = { users, brands, brandSubscriptions };
 
 function createDb(pool: mysql.Pool) {
   return drizzle(pool, { schema, mode: 'default' });

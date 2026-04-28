@@ -1,7 +1,7 @@
 import { eq, and } from 'drizzle-orm';
 import { v4 as uuidv4 } from 'uuid';
 import { getDb } from '../shared/db/connection.js';
-import { users } from '../shared/db/schema/users.js';
+import { users } from '../shared/db/schema.js';
 import { User } from './user.entity.js';
 import { UpdateProfileRequest } from './user.dto.js';
 

@@ -5,7 +5,7 @@ config({ path: '.env' });
 config({ path: '.env.local', override: true });
 
 export default defineConfig({
-  schema: './src/shared/db/schema/index.ts',
+  schema: './src/shared/db/schema.ts',
   out: './drizzle',
   dialect: 'mysql',
   dbCredentials: {
